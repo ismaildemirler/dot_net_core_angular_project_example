@@ -1,0 +1,190 @@
+<div class="zoacres-content-wrapper">
+  <div class="zoacres-content zoacres-page">
+    <header id="page-title" class="page-title-wrap">
+      <div class="page-title-wrap-inner parallax-item" data-stellar-background-ratio="0.5" data-property="no-video" data-img="" style="background-position: 0% -47.8333px;">
+        <span class="page-title-overlay"></span>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="page-title-inner">
+                <div class="pull-left">
+                  <h1 class="page-title">Üyelik</h1>
+                </div>
+                <div class="pull-right">
+                  <div id="breadcrumb" class="breadcrumb">
+                    <a routerLink="/home">Ana Sayfa</a>
+                    <span class="current">Üyelik</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="zoacres-content-inner">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div id="primary" class="content-area clearfix"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <span class="row-overlay"></span>
+  <div class="vc_row wpb_row vc_inner vc_row-fluid vc_custom_1534593052704">
+    <div class="wpb_column vc_column_container vc_col-sm-6">
+      <div class="vc_column-inner">
+        <div class="wpb_wrapper">
+          <div class="contact-form-wrapper contact-form-grey" data-css="&quot;&quot;">
+            <div class="contact-form">
+              <div role="form" class="wpcf7" id="wpcf7-f2427-p1740-o2" lang="en-US" dir="ltr">
+                <div class="screen-reader-response"></div>
+                <form [formGroup]="loginForm" (ngSubmit)="login()" class="wpcf7-form">
+                  <p>Email adresinizi ve şifrenizi yazarak sistemimize giriş yapabilirsiniz.</p>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <span class="wpcf7-form-control-wrap Phone">
+                        <input type="text" name="email" id="email"
+                               class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
+                               aria-required="true" required aria-invalid="false" placeholder="Email"
+                               formControlName="email">
+                      </span>
+                      <span class="help-block" *ngIf="loginForm.get('email').hasError('required') && loginForm.get('email').touched">
+                        Email gerekli
+                      </span>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <span class="wpcf7-form-control-wrap Phone">
+                        <input type="password" name="password" id="password"
+                               class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
+                               aria-required="true" required aria-invalid="false" placeholder="Şifre"
+                               formControlName="password">
+                      </span>
+                      <span class="help-block" *ngIf="loginForm.get('password').hasError('required') && loginForm.get('password').touched">
+                        Şifre gerekli
+                      </span>
+                    </div>
+                  </div>
+                  <p>
+                    <input type="submit" [disabled]="!loginForm.valid" value="Giriş yapın"
+                           class="wpcf7-form-control wpcf7-submit">
+                    <span class="ajax-loader"></span>
+                  </p>
+                  <div class="wpcf7-response-output wpcf7-display-none"></div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="wpb_column vc_column_container vc_col-sm-6">
+      <div class="vc_column-inner">
+        <div class="wpb_wrapper">
+          <div class="contact-form-wrapper contact-form-grey" data-css="&quot;&quot;">
+            <div class="contact-form">
+              <div role="form" class="wpcf7" id="wpcf7-f2427-p1740-o2" lang="en-US" dir="ltr">
+                <div class="screen-reader-response"></div>
+                <form [formGroup]="registerForm" (ngSubmit)="register()" class="wpcf7-form">
+                  <p>Aşağıdaki alanları doldurarak sistemimize kayıt olabilirsiniz.</p>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <span class="wpcf7-form-control-wrap Phone">
+                        <input type="text" name="fullName" id="fullName"
+                               class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
+                               aria-required="true" required aria-invalid="false" placeholder="Ad Soyad *"
+                               formControlName="fullName">
+                      </span>
+                      <span class="help-block" *ngIf="registerForm.get('fullName').hasError('required') && registerForm.get('fullName').touched">
+                        Ad soyad gereklidir
+                      </span>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <span class="wpcf7-form-control-wrap Phone">
+                        <input type="text" name="email" id="email"
+                               class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
+                               aria-required="true" required aria-invalid="false" placeholder="Email *"
+                               formControlName="email">
+                      </span>
+                      <span class="help-block" *ngIf="registerForm.get('email').hasError('required') && registerForm.get('email').touched">
+                        Email gereklidir
+                      </span>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <span class="wpcf7-form-control-wrap Phone">
+                        <input type="text" name="password" id="password"
+                               class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
+                               aria-required="true" required aria-invalid="false" placeholder="Şifre *"
+                               formControlName="password">
+                      </span>
+                      <span class="help-block" *ngIf="registerForm.get('password').hasError('required') && registerForm.get('password').touched">
+                        Şifre gereklidir
+                      </span>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <span class="wpcf7-form-control-wrap Phone">
+                        <input type="text" name="confirmPassword" id="confirmPassword"
+                               class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
+                               aria-required="true" required aria-invalid="false" placeholder="Şifre Tekrarı *"
+                               formControlName="confirmPassword">
+                      </span>
+                      <span class="help-block" *ngIf="registerForm.get('confirmPassword').hasError('required') && registerForm.get('confirmPassword').touched">
+                        Şifre tekrarı gereklidir
+                      </span>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <span class="wpcf7-form-control-wrap Phone">
+                        <input type="text" name="userName" id="userName"
+                               class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
+                               aria-required="true" required aria-invalid="false" placeholder="Kullanıcı Adı *"
+                               formControlName="userName">
+                      </span>
+                      <span class="help-block" *ngIf="registerForm.get('userName').hasError('required') && registerForm.get('userName').touched">
+                        Kullanıcı adı gereklidir
+                      </span>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <span class="wpcf7-form-control-wrap Phone">
+                        <input type="text" name="phoneNumber" id="phoneNumber"
+                               class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
+                               aria-required="true" required aria-invalid="false" placeholder="Telefon *"
+                               formControlName="phoneNumber">
+                      </span>
+                      <span class="help-block" *ngIf="registerForm.get('phoneNumber').hasError('required') && registerForm.get('phoneNumber').touched">
+                        Telefon gereklidir
+                      </span>
+                    </div>
+                  </div>
+                  <p>
+                    <input type="submit" [disabled]="!registerForm.valid" value="Giriş yapın"
+                           class="wpcf7-form-control wpcf7-submit">
+                    <span class="ajax-loader"></span>
+                  </p>
+                  <div class="wpcf7-response-output wpcf7-display-none"></div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+

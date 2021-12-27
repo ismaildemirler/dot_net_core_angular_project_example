@@ -1,0 +1,16 @@
+<div class="container-fluid row mb-5 mt-5" style="padding: 0rem 12rem;">
+  <div class="col-lg-3">
+    <app-course-filter (firmRequest)="getFirmRequest($event)"></app-course-filter>
+
+  </div>
+  <div class="col-lg-9">
+    <div class="row">
+      <div class="col-lg-4 col-md-12" *ngFor="let index of [0,1,2,3,4,5,6,7,8,9]">
+        <app-course [id]='index'></app-course>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+

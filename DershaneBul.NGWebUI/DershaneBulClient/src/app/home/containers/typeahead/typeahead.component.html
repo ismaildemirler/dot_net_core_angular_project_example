@@ -1,0 +1,7 @@
+<ng-template #rt let-r="result" let-t="term">
+  <a [routerLink]="['/coursedetail', r.firmId]">
+    <ngb-highlight [result]="r.firmName" [term]="t"></ngb-highlight>
+  </a>
+</ng-template>
+<input id="typeahead-template" type="text" class="form-control" placeholder="Dersane adıyla arama yapın..." [(ngModel)]="model" [ngbTypeahead]="search" [resultTemplate]="rt" [inputFormatter]="formatter" />
+

@@ -1,0 +1,117 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props')" />
+
+  <PropertyGroup Label="Globals">
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+    <TypeScriptVersion>3.5</TypeScriptVersion>
+    <TypeScriptToolsVersion>3.6</TypeScriptToolsVersion>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="DershaneBulClient\tsconfig.app.json" />
+    <Content Remove="DershaneBulClient\tsconfig.spec.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="DershaneBulClient\src\app\componentmodules\auth\auth.interceptor.ts" />
+    <None Remove="DershaneBulClient\src\app\componentmodules\auth\guards\auth.guard.ts" />
+    <None Remove="DershaneBulClient\src\app\componentmodules\auth\guards\protected-page.guard.ts" />
+    <None Remove="DershaneBulClient\src\app\componentmodules\auth\models\request\request-login-user.ts" />
+    <None Remove="DershaneBulClient\src\app\componentmodules\auth\models\request\request-logout-user.ts" />
+    <None Remove="DershaneBulClient\src\app\componentmodules\auth\models\request\request-refresh-token.ts" />
+    <None Remove="DershaneBulClient\src\app\componentmodules\auth\models\request\reuest-register-user.ts" />
+    <None Remove="DershaneBulClient\src\app\componentmodules\auth\models\response\response-authentication.ts" />
+    <None Remove="DershaneBulClient\src\app\componentmodules\filter\models\request\request-city.ts" />
+    <None Remove="DershaneBulClient\src\app\componentmodules\filter\models\request\request-firm.ts" />
+    <None Remove="DershaneBulClient\src\app\componentmodules\filter\models\request\request-program.ts" />
+    <None Remove="DershaneBulClient\src\app\componentmodules\filter\models\response\response-city.ts" />
+    <None Remove="DershaneBulClient\src\app\componentmodules\filter\models\response\response-firm.ts" />
+    <None Remove="DershaneBulClient\src\app\componentmodules\filter\models\response\response-program.ts" />
+    <None Remove="DershaneBulClient\src\app\detail-page\models\firm-address.ts" />
+    <None Remove="DershaneBulClient\src\app\detail-page\models\firm-contact.ts" />
+    <None Remove="DershaneBulClient\src\app\detail-page\models\firm-property-menu.ts" />
+    <None Remove="DershaneBulClient\src\app\detail-page\models\firm-property.ts" />
+    <None Remove="DershaneBulClient\src\app\home\models\request-filter-model.ts" />
+    <None Remove="DershaneBulClient\src\app\models\request\request-general.ts" />
+    <None Remove="DershaneBulClient\src\app\models\response\response-general.ts" />
+    <None Remove="DershaneBulClient\src\app\utils\app-constants.ts" />
+    <None Remove="DershaneBulClient\src\app\utils\handlers\global-error.handler.ts" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="DershaneBulClient\src\assets\images\flat-1.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="DershaneBulClient\src\app\componentmodules\auth\containers\" />
+    <Folder Include="DershaneBulClient\src\app\componentmodules\auth\services\" />
+    <Folder Include="DershaneBulClient\src\app\componentmodules\filter\containers\" />
+    <Folder Include="DershaneBulClient\src\app\componentmodules\filter\services\" />
+    <Folder Include="DershaneBulClient\src\app\detail-page\containers\" />
+    <Folder Include="DershaneBulClient\src\app\home\models\request\" />
+    <Folder Include="DershaneBulClient\src\app\home\models\response\" />
+    <Folder Include="DershaneBulClient\src\app\layout\" />
+    <Folder Include="DershaneBulClient\src\app\list-page\containers\" />
+    <Folder Include="DershaneBulClient\src\app\list-page\models\" />
+    <Folder Include="DershaneBulClient\src\app\list-page\services\" />
+    <Folder Include="DershaneBulClient\src\app\services\alertify\" />
+    <Folder Include="DershaneBulClient\src\app\services\error\" />
+    <Folder Include="DershaneBulClient\src\app\services\logging\" />
+    <Folder Include="wwwroot\" />
+    <Folder Include="wwwroot\images\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="9.0.0" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="7.0.0" />
+    <PackageReference Include="bootstrap" Version="4.3.1" />
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.2.7" />
+    <PackageReference Include="Microsoft.AspNetCore.SpaServices" Version="2.2.7" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.2.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DershaneBul.Business\DershaneBul.Business.csproj" />
+    <ProjectReference Include="..\DershaneBul.DataAccess\DershaneBul.DataAccess.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <TypeScriptCompile Include="DershaneBulClient\src\app\componentmodules\auth\auth.interceptor.ts" />
+    <TypeScriptCompile Include="DershaneBulClient\src\app\componentmodules\auth\guards\auth.guard.ts" />
+    <TypeScriptCompile Include="DershaneBulClient\src\app\componentmodules\auth\guards\protected-page.guard.ts" />
+    <TypeScriptCompile Include="DershaneBulClient\src\app\componentmodules\auth\models\request\request-login-user.ts" />
+    <TypeScriptCompile Include="DershaneBulClient\src\app\componentmodules\auth\models\request\request-logout-user.ts" />
+    <TypeScriptCompile Include="DershaneBulClient\src\app\componentmodules\auth\models\request\request-refresh-token.ts" />
+    <TypeScriptCompile Include="DershaneBulClient\src\app\componentmodules\auth\models\request\reuest-register-user.ts" />
+    <TypeScriptCompile Include="DershaneBulClient\src\app\componentmodules\auth\models\response\response-authentication.ts" />
+    <TypeScriptCompile Include="DershaneBulClient\src\app\componentmodules\filter\models\request\request-city.ts" />
+    <TypeScriptCompile Include="DershaneBulClient\src\app\componentmodules\filter\models\request\request-firm.ts" />
+    <TypeScriptCompile Include="DershaneBulClient\src\app\componentmodules\filter\models\request\request-program.ts" />
+    <TypeScriptCompile Include="DershaneBulClient\src\app\componentmodules\filter\models\response\response-city.ts" />
+    <TypeScriptCompile Include="DershaneBulClient\src\app\componentmodules\filter\models\response\response-firm.ts" />
+    <TypeScriptCompile Include="DershaneBulClient\src\app\componentmodules\filter\models\response\response-program.ts" />
+    <TypeScriptCompile Include="DershaneBulClient\src\app\detail-page\models\firm-address.ts" />
+    <TypeScriptCompile Include="DershaneBulClient\src\app\detail-page\models\firm-contact.ts" />
+    <TypeScriptCompile Include="DershaneBulClient\src\app\detail-page\models\firm-property.ts" />
+    <TypeScriptCompile Include="DershaneBulClient\src\app\detail-page\models\firm-property-menu.ts" />
+    <TypeScriptCompile Include="DershaneBulClient\src\app\models\request\request-general.ts" />
+    <TypeScriptCompile Include="DershaneBulClient\src\app\models\response\response-general.ts" />
+    <TypeScriptCompile Include="DershaneBulClient\src\app\utils\app-constants.ts" />
+    <TypeScriptCompile Include="DershaneBulClient\src\app\utils\handlers\global-error.handler.ts" />
+  </ItemGroup>
+
+
+
+</Project>

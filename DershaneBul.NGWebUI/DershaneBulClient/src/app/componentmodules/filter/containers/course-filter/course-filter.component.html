@@ -1,0 +1,191 @@
+<aside class="widget-area left-widget-area zoacres-sticky-obj is_stuck">
+  <section id="zoacres_property_search_widget-1" class="widget zoacres_property_search_widget">
+    <h3 class="widget-title">Filtre</h3>
+    <div class="widg-content">
+      <div class="advance-search-wrap search-form-redirect"
+           data-search-url="https://demo.zozothemes.com/zoacres/property-search-results/">
+        <div class="bts-ajax-search">
+          <div class="input-group">
+            <input type="text" class="form-control ajax-search-box " name="property_name" (input)="textSearch($event.target.value)"
+                   placeholder="Arayacağınız kelimeyi yazınız..." value="">
+            <span class="input-group-addon">
+              <button class="btn btn-primary ajax-search-trigger" type="button">
+                <span class="fa fa-search"></span>
+              </button>
+            </span>
+          </div>
+          <div class="ajax-search-dropdown">
+          </div>
+        </div>
+        <div class="advance-search-btns-warp" id="advance-search-wrap-5">
+          <form [formGroup]="filterForm">
+            <div class="search-filters-wrap">
+              <div class="bts-select all-type-search">
+                <div class="form-group">
+                  <select formControlName="program" class="form-control" (change)="onChangeType($event.target.value)">
+                    <option value="">Lütfen program seçiniz...</option>
+                    <option *ngFor="let program of programs" [value]="program.programId">
+                      {{program.programDescription}}
+                    </option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <select formControlName="city" class="form-control" (change)="onChangeCity($event.target.value)">
+                    <option value="">Lütfen şehir seçiniz...</option>
+                    <option *ngFor="let city of cities" [value]="city.cityId">{{city.cityName}}</option>
+                  </select>
+                </div>
+                <!--<input class="search-hidd-id search-type-id" type="hidden" value="" name="search-type-id">
+                <button class="btn btn-primary bts-select-toggle dropdown-toggle" type="button" data-toggle="dropdown"
+                        aria-expanded="false">
+                  Tüm Dershaneler
+                </button>
+                <div class="dropdown-menu bts-select-dropdown">
+                  <ul class="bts-select-menu">
+                    <li data-id="0">Tüm Dershaneler</li>
+                    <li data-id="{{courseType.courseTypeId}}" *ngFor="let courseType of courseTypes">{{courseType.courseTypeDescription}}</li>
+                  </ul>
+                </div>-->
+              </div>
+              <!--<div class="bts-select all-cities-search">
+                <input class="search-hidd-id search-city-id" type="hidden" value="" name="search-city-id">
+                <button class="btn btn-primary bts-select-toggle dropdown-toggle" type="button" data-toggle="dropdown"
+                        aria-expanded="false">
+                  Tüm Şehirler
+                </button>
+                <div class="dropdown-menu bts-select-dropdown">
+                  <ul class="bts-select-menu">
+                    <li data-id="0">Tüm Şehirler</li>
+                    <li data-id="{{city.cityId}}" *ngFor="let city of cities">{{city.cityName}}</li>
+                  </ul>
+                </div>
+              </div>-->
+            </div>
+            <div class="range-filters-wrap">
+              <div class="property-price-search">
+                <p>
+                  <label>Fiyat Aralığı:</label>
+                  <span class="slider-range-amount" data-currency="$" data-from="0" data-to="1000000"
+                        data-min="0" data-max="1000000">
+                    ₺0 - ₺1000000
+                  </span>
+                </p>
+                <div class="slider-range ui-slider ui-corner-all ui-slider-horizontal ui-widget ui-widget-content">
+                  <div class="ui-slider-range ui-corner-all ui-widget-header" style="left: 0%; width: 100%;">
+                  </div>
+                  <span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default" style="left: 0%;">
+                  </span>
+                  <span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default" style="left: 100%;">
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="advance-search-bottom">
+              <div class="property-search">
+                <button class="btn btn-primary ajax-search-trigger" type="submit">
+                  <span class="fa fa-search"></span>
+                  Arama Yapın
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="zoacres_latest_property_widget-4" class="widget zoacres_latest_property_widget">
+    <h5 class="widget-title">Sıklıkla Bakılan Dershaneler </h5><div class="widg-content">
+      <ul class="side-newsfeed" data-items="1" data-dots="0" data-nav="1">
+        <li>
+          <div class="media side-item">
+            <div class="side-image mr-3">
+              <div class="widget-prop-image-wrap">
+                <div class="prop-stat">
+                  <a href="https://demo.zozothemes.com/zoacres/property-status/sale/">Sale</a>
+                </div><a href="https://demo.zozothemes.com/zoacres/property/luxury-apartment-in-chelsea/"
+                         rel="bookmark">
+                  <img width="80" height="80"
+                       src="https://demo.zozothemes.com/zoacres/wp-content/uploads/2018/05/1-1-2-80x80.jpg"
+                       class="img-responsive wp-post-image" alt="" sizes="(max-width: 80px) 100vw, 80px">
+                </a>
+              </div>
+            </div><div class="media-body side-item-text">
+              <a class="themeh-color"
+                 href="https://demo.zozothemes.com/zoacres/property/luxury-apartment-in-chelsea/"
+                 rel="bookmark">Luxury Apartment In chelsea</a><div class="property-price-inner">
+                <span class="price-icon">$</span><span class="property-price">450,000</span>
+                <span class="price-after-label">$777 / sqft</span>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="media side-item">
+            <div class="side-image mr-3">
+              <div class="widget-prop-image-wrap">
+                <div class="prop-stat"><a href="https://demo.zozothemes.com/zoacres/property-status/rent/">Rent</a></div>
+                <a href="https://demo.zozothemes.com/zoacres/property/nature-friendly-family-houses/" rel="bookmark">
+                  <img width="80" height="80" src="https://demo.zozothemes.com/zoacres/wp-content/uploads/2018/05/2-1-2-80x80.jpg"
+                       class="img-responsive wp-post-image" alt=""
+                       sizes="(max-width: 80px) 100vw, 80px">
+                </a>
+              </div>
+            </div><div class="media-body side-item-text">
+              <a class="themeh-color" href="https://demo.zozothemes.com/zoacres/property/nature-friendly-family-houses/"
+                 rel="bookmark">Nature-Friendly Family Houses</a><div class="property-price-inner">
+                <span class="price-icon">$</span>
+                <span class="property-price">1,350</span><span class="price-after-label">/ per month</span>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="media side-item">
+            <div class="side-image mr-3">
+              <div class="widget-prop-image-wrap">
+                <div class="prop-stat">
+                  <a href="https://demo.zozothemes.com/zoacres/property-status/rent/">Rent</a>
+                </div>
+                <a href="https://demo.zozothemes.com/zoacres/property/house-rent-in-hydepark/" rel="bookmark">
+                  <img width="80" height="80"
+                       src="https://demo.zozothemes.com/zoacres/wp-content/uploads/2018/05/3-1-1-80x80.jpg"
+                       class="img-responsive wp-post-image" alt=""
+                       sizes="(max-width: 80px) 100vw, 80px">
+                </a>
+              </div>
+            </div><div class="media-body side-item-text">
+              <a class="themeh-color" href="https://demo.zozothemes.com/zoacres/property/house-rent-in-hydepark/"
+                 rel="bookmark">House Rent in Hydepark</a><div class="property-price-inner">
+                <span class="price-icon">$</span>
+                <span class="property-price">2,500</span><span class="price-after-label">/per month</span>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="media side-item">
+            <div class="side-image mr-3">
+              <div class="widget-prop-image-wrap">
+                <div class="prop-stat">
+                  <a href="https://demo.zozothemes.com/zoacres/property-status/sale/">Sale</a>
+                </div>
+                <a href="https://demo.zozothemes.com/zoacres/property/apartment-in-memorial-texas/" rel="bookmark">
+                  <img width="80" height="80" src="https://demo.zozothemes.com/zoacres/wp-content/uploads/2018/05/4-1-2-80x80.jpg"
+                       class="img-responsive wp-post-image" alt="" sizes="(max-width: 80px) 100vw, 80px">
+                </a>
+              </div>
+            </div>
+            <div class="media-body side-item-text">
+              <a class="themeh-color"
+                 href="https://demo.zozothemes.com/zoacres/property/apartment-in-memorial-texas/"
+                 rel="bookmark">Apartment in Memorial Texas</a><div class="property-price-inner">
+                <span class="price-icon">$</span><span class="property-price">220,000</span><span class="price-after-label">550 / Sqft</span>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+</aside>
+

@@ -1,0 +1,158 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\PROJECTS\\FULLSTACKS\\DERSHANEBUL\\DershaneBul\\DershaneBul.Core\\DershaneBul.Core.csproj": {}
+  },
+  "projects": {
+    "C:\\PROJECTS\\FULLSTACKS\\DERSHANEBUL\\DershaneBul\\DershaneBul.Core\\DershaneBul.Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\PROJECTS\\FULLSTACKS\\DERSHANEBUL\\DershaneBul\\DershaneBul.Core\\DershaneBul.Core.csproj",
+        "projectName": "DershaneBul.Core",
+        "projectPath": "C:\\PROJECTS\\FULLSTACKS\\DERSHANEBUL\\DershaneBul\\DershaneBul.Core\\DershaneBul.Core.csproj",
+        "packagesPath": "C:\\Users\\ismail\\.nuget\\packages\\",
+        "outputPath": "C:\\PROJECTS\\FULLSTACKS\\DERSHANEBUL\\DershaneBul\\DershaneBul.Core\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\ismail\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {
+              "C:\\PROJECTS\\FULLSTACKS\\DERSHANEBUL\\DershaneBul\\DershaneBul.Entities\\DershaneBul.Entities.csproj": {
+                "projectPath": "C:\\PROJECTS\\FULLSTACKS\\DERSHANEBUL\\DershaneBul\\DershaneBul.Entities\\DershaneBul.Entities.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "Microsoft.AspNetCore.Authorization": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.Mvc.Abstractions": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.Mvc.Core": {
+              "target": "Package",
+              "version": "[2.2.5, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[2.2.6, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[2.2.6, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            },
+            "Serilog": {
+              "target": "Package",
+              "version": "[2.8.0, )"
+            },
+            "Serilog.AspNetCore": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
+            "Serilog.Extensions.Logging": {
+              "target": "Package",
+              "version": "[3.0.1, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[5.5.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.416\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\PROJECTS\\FULLSTACKS\\DERSHANEBUL\\DershaneBul\\DershaneBul.Entities\\DershaneBul.Entities.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\PROJECTS\\FULLSTACKS\\DERSHANEBUL\\DershaneBul\\DershaneBul.Entities\\DershaneBul.Entities.csproj",
+        "projectName": "DershaneBul.Entities",
+        "projectPath": "C:\\PROJECTS\\FULLSTACKS\\DERSHANEBUL\\DershaneBul\\DershaneBul.Entities\\DershaneBul.Entities.csproj",
+        "packagesPath": "C:\\Users\\ismail\\.nuget\\packages\\",
+        "outputPath": "C:\\PROJECTS\\FULLSTACKS\\DERSHANEBUL\\DershaneBul\\DershaneBul.Entities\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\ismail\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.416\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

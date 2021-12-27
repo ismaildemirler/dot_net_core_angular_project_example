@@ -1,0 +1,73 @@
+article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
+  display: block;
+}
+
+.zoacres-page .page-title-wrap-inner {
+  color: #fff;
+  background-color: #f4f6fd;
+  background-image: url(https://demo.zozothemes.com/zoacres/wp-content/uploads/2018/06/1__8_-1.jpg);
+  padding-top: 65px;
+  padding-bottom: 65px;
+}
+
+.page-title-wrap-inner {
+  position: relative;
+  background: #f3f3f3;
+  padding: 30px 0;
+  color: #000;
+}
+
+.parallax-item {
+  background-attachment: fixed;
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.zoacres-page .page-title-wrap-inner > .page-title-overlay {
+  background: rgba(0,175,255,.9);
+}
+
+.page-title-overlay {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.page-title-inner .pull-right {
+  text-align: right;
+  width: 50%;
+}
+
+.page-title-inner > div {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.breadcrumb {
+  background: 0 0;
+  margin: 0;
+  padding: 0;
+  border: none;
+  display: block;
+}
+
+.breadcrumb {
+  display: -ms-flexbox;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.zoacres-page .page-title-wrap a {
+  color: #fff;
+}
+
+.breadcrumb > * {
+  padding-right: 10px;
+}
+
+  .breadcrumb > *:last-child {
+    padding-right: 0;
+  }

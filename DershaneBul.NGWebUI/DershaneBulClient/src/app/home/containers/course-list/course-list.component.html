@@ -1,0 +1,132 @@
+<div class="container">
+  <div data-vc-full-width="true" data-vc-full-width-init="true"
+       class="vc_row wpb_row vc_row-fluid vc_custom_1547457737026 vc_row-has-fill"
+       style="position: relative; left: -26.6667px; box-sizing: border-box;
+        padding-left: 26.6667px; padding-right: 26.3333px;">
+    <div class="wpb_column vc_column_container vc_col-sm-12">
+      <div class="vc_column-inner">
+        <div class="wpb_wrapper">
+          <div class="section-title-wrapper text-center shortcode-rand-55 zoacres-inline-css">
+            <div class="title-wrap">
+              <span class="sub-title">Discover</span>
+              <h3 class="section-title">Popular Properties</h3>
+              <span class="title-separator separator-border theme-color-bg"></span>
+            </div>
+            <div class="section-description"></div>
+          </div>
+          <div class="property-filter-sc">
+            <div class="property-filter-wrapcenter text-center">
+              <ul class="nav property-filter">
+                <li class="nav-item" *ngFor="let program of programs">
+                  <a (click)="filterFirmByProgram(program)">{{program.programDescription}}</a>
+                </li>
+              </ul>
+            </div>
+            <div class="map-property-list property-sc-wrapper shortcode-rand-56 zoacres-inline-css" data-cols="4" data-ppp="6">
+              <div class="row">
+                <div class="col-lg-4 col-md-6" *ngFor="let firm of firms">
+                  <div class="property-wrap property-grid">
+                    <div class="property-title-address-wrap">
+                      <div class="property-title-wrap">
+                        <h5>
+                          <a href="https://demo.zozothemes.com/zoacres/property/luxury-apartment-in-chelsea/" title="{{firm.firmName}}">{{firm.firmName}}</a>
+                        </h5>
+                      </div>
+                      <div class="property-area">
+                        <span class="icon-location-pin"></span>
+                        <a href="https://demo.zozothemes.com/zoacres/property-area/chelsea/" title="Chelsea">{{firm.townName}}</a>,
+                        <a href="https://demo.zozothemes.com/zoacres/property-city/new-york-city/" title="New York City">{{firm.cityName}}</a>
+                      </div>
+                    </div>
+                    <!-- .property-title-address-wrap -->
+                    <div class="property-image-wrap">
+                      <img src="https://demo.zozothemes.com/zoacres/wp-content/uploads/2018/05/1-1-2-390x231.jpg" alt="Luxury Apartment In chelsea" class="img-fluid">
+                      <div class="overlay-details overlay-top">
+                        <div class="overlay-top-meta-wrap">
+                          <ul class="nav property-meta pull-left"></ul>
+                          <ul class="nav property-meta pull-right">
+                            <li class="property-ribbon">
+                              <span class="ribbon-text ribbon-bg-openhouse">Open House</span>
+                            </li>
+                            <li class="property-ribbon">
+                              <span class="ribbon-text ribbon-bg-soldout"> Sold Out</span>
+                            </li>
+                            <li class="property-ribbon">
+                              <span class="ribbon-text ribbon-bg-forsale"> For Sale</span>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="overlay-details overlay-bottom">
+                        <div class="overlay-bottom-meta-wrap">
+                          <ul class="nav property-meta pull-left">
+                            <li class="property-favourite-wrap">
+                              <div class="property-favourite tooltip-parent">
+                                <a href="#" class="property-fav" data-id="26">
+                                  <span class="fa fa-heart"></span>
+                                </a>
+                                <span class="tooltip-title">Favourite </span>
+                              </div>
+                            </li>
+                            <li class="property-gallery">
+                              <a href="#" title="Gallery">
+                                <span class="fa fa-camera"></span>
+                              </a>
+                              <div class="property-gallery-container">
+                                <div class="property-gallery-inner">
+                                  <div class="zoom-gallery">
+                                    <a href="https://demo.zozothemes.com/zoacres/wp-content/uploads/2018/05/1-4.jpg" title="1-4">
+                                      <img width="80" height="80" src="https://demo.zozothemes.com/zoacres/wp-content/uploads/2018/05/1-4-80x80.jpg" class="img-fluid" alt="">
+                                    </a>
+                                    <a href="https://demo.zozothemes.com/zoacres/wp-content/uploads/2018/05/1-3.jpg" title="1-3">
+                                      <img width="80" height="80" src="https://demo.zozothemes.com/zoacres/wp-content/uploads/2018/05/1-3-80x80.jpg" class="img-fluid" alt="">
+                                    </a>
+                                    <a href="https://demo.zozothemes.com/zoacres/wp-content/uploads/2018/05/1-2-1.jpg" title="1-2">
+                                      <img width="80" height="80" src="https://demo.zozothemes.com/zoacres/wp-content/uploads/2018/05/1-2-1-80x80.jpg" class="img-fluid" alt="">
+                                    </a>
+                                  </div>
+                                  <!-- .zoom-gallery -->
+                                </div>
+                                <!-- .property-gallery-inner -->
+                              </div>
+                            </li>
+                          </ul>
+                          <ul class="nav property-meta pull-right">
+                            <li class="property-video tooltip-parent">
+                              <a class="popup-video-post" href="http://www.youtube.com/watch?v=MRAZ_mSLXrA">
+                                <span class="icon-camrecorder"></span>
+                              </a>
+                              <span class="tooltip-title">Video </span>
+                            </li>
+                            <li class="property-compare tooltip-parent">
+                              <a class="prop-compare" href="#" data-id="26" data-img="https://demo.zozothemes.com/zoacres/wp-content/uploads/2018/05/1-1-2-768x456.jpg">
+                                <span class="icon-equalizer"></span>
+                              </a>
+                              <span class="tooltip-title">Compare </span>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="property-price-wrap">
+                      <div class="property-price-inner">
+                        <span class="price-icon">$</span>
+                        <span class="property-price">450,000</span>
+                        <span class="price-after-label">$777 / sqft</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <input type="hidden" class="prop-params" data-params="{&quot;prop_elements&quot;:{&quot;title-address&quot;:&quot;Title with Address&quot;,&quot;image&quot;:&quot;Image&quot;,&quot;price&quot;:&quot;Price&quot;},&quot;col_class&quot;:&quot;col-lg-4 col-md-6&quot;,&quot;meta_args&quot;:{&quot;overlay_top_meta&quot;:{&quot;Left&quot;:{&quot;featured-ribb&quot;:&quot;Featured Ribbon&quot;},&quot;Right&quot;:{&quot;other-ribb&quot;:&quot;Other Ribbon&quot;},&quot;disabled&quot;:{&quot;address&quot;:&quot;Address&quot;,&quot;favourite&quot;:&quot;Favourite&quot;,&quot;gallery&quot;:&quot;Gallery&quot;,&quot;video&quot;:&quot;Video&quot;,&quot;compare&quot;:&quot;Compare&quot;}},&quot;overlay_bottom_meta&quot;:{&quot;Left&quot;:{&quot;favourite&quot;:&quot;Favourite&quot;,&quot;gallery&quot;:&quot;Gallery&quot;},&quot;Right&quot;:{&quot;video&quot;:&quot;Video&quot;,&quot;compare&quot;:&quot;Compare&quot;},&quot;disabled&quot;:{&quot;featured-ribb&quot;:&quot;Featured Ribbon&quot;,&quot;other-ribb&quot;:&quot;Other Ribbon&quot;,&quot;address&quot;:&quot;Address&quot;}},&quot;overlay_items&quot;:{&quot;Top&quot;:{&quot;top-meta&quot;:&quot;Top Meta&quot;},&quot;Bottom&quot;:{&quot;bottom-meta&quot;:&quot;Bottom Meta&quot;},&quot;disabled&quot;:{&quot;title&quot;:&quot;Title&quot;}},&quot;overlay_opt&quot;:true,&quot;more_text&quot;:&quot;Read More&quot;,&quot;img_size&quot;:&quot;zoacres-grid-medium&quot;,&quot;layout&quot;:&quot;grid&quot;},&quot;excerpt_length&quot;:&quot;15&quot;,&quot;animate_grid&quot;:&quot;off&quot;}">
+            <div class="property-loadmore-wrap text-center">
+              <p class="no-more-property">No more property to load.</p>
+              <a href="#" class="btn property-loadmore" data-page="2">Load More Properties</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

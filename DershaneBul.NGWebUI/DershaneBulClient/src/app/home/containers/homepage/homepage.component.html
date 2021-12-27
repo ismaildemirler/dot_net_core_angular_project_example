@@ -1,0 +1,93 @@
+<header class="zoacres-header header-absolute mt-5">
+  <div class="header-inner hidden-md-down hidden-md-land-down">
+    <div class="sticky-outer" data-height="91" style="height: 91px;">
+      <div class="sticky-head">
+        <nav class="navbar clearfix">
+          <div class="custom-container navbar-inner">
+            <ul class="navbar-items nav pull-left">
+              <li class="nav-item">
+                <div class="nav-item-inner">
+                  <div class="main-logo">
+                    <a routerLink="/home" title="DersaneBul">
+                      <img class="custom-logo img-responsive" src="https://demo.zozothemes.com/zoacres/wp-content/uploads/2019/01/logo-light-1.png" alt="Zoacres" title="Zoacres">
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-item">
+                <div class="nav-item-inner"></div>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="row background-container" style="position: relative; box-sizing: border-box; padding-left: 87px; padding-right: 87px;">
+  <span class="row-overlay"></span>
+  <div class="wpb_column vc_column_container col-sm-12">
+    <div class="vc_column-inner">
+      <div class="px-5">
+        <div class="wpb_wrapper px-5">
+          <div class="section-title-wrapper text-center">
+            <div class="title-wrap">
+              <span class="sub-title">Tüm Dersaneler Tek Çatı Altında Toplandı</span>
+              <h1 class="section-title">Aradığınız Dershane Burada!</h1>
+            </div>
+            <div class="section-description"></div>
+          </div>
+          <div class="row wpb_row vc_inner vc_row-fluid">
+            <div class="wpb_column vc_column_container col-sm-1">
+              <div class="vc_column-inner">
+                <div class="wpb_wrapper"></div>
+              </div>
+            </div><div class="wpb_column vc_column_container col-sm-10">
+              <div class="vc_column-inner">
+                <div class="wpb_wrapper">
+                  <div class="zoacres-advance-search-form-wrap advance-search-style-1">
+                    <div class="advance-search-wrap search-form-redirect"
+                         data-search-url="https://demo.zozothemes.com/zoacres/property-search-results/">
+                      <div class="container bts-ajax-search">
+                        <div class="input-group">
+                          <span class="input-group-addon">
+                            <i class="fa fa-map-marker"></i>
+                          </span>
+                          <!--<input type="text" class="form-control ajax-search-box ajax-key-search" name="property_name" placeholder="Dersane adıyla arama yapın..." value="">-->
+                          <app-typeahead></app-typeahead>
+                          <span class="input-group-addon">
+                            <button class="btn btn-primary ajax-search-trigger" type="button">
+                              <span class="fa fa-search"></span>
+                            </button>
+                          </span>
+                        </div>
+                        <div class="ajax-search-dropdown"></div>
+                      </div>
+                      <div class="advance-search-btns-warp" id="advance-search-wrap-38">
+                        <div class="search-filters-wrap"></div><div class="range-filters-wrap">
+                        </div><div class="advance-search-bottom"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div><div class="wpb_column vc_column_container col-sm-1">
+              <div class="vc_column-inner">
+                <div class="wpb_wrapper">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-center mt-5 px-5">
+            <div class="col-sm-12 col-lg-2" *ngFor="let program of programs">
+              <app-course-type [program]="program"></app-course-type>
+            </div>
+          </div>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<app-counter></app-counter>
